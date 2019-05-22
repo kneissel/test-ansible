@@ -1,0 +1,12 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+        - name: Install a list of packages
+          apt:
+            name: "{{ packages }}"
+            update_cache: yes
+          vars:
+            packages:
+            - apache2
+            - php7.0
+            - libapache2-mod-php7.0
