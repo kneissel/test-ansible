@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: apt install Sample
   hosts: all
   tasks:
         - name: Install a list of packages
